@@ -27,6 +27,7 @@ class Artist
         else
           self.create(name)
           true
+        end
       end
     end
     binding.pry
