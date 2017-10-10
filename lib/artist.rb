@@ -21,8 +21,7 @@ class Artist
     if self.all.empty?
       self.create(name)
     else
-      self.all.detect do |artist|
-        artist.name == name
+      self.all.detect {}|artist| artist.name == name}
       end
     end
   end
