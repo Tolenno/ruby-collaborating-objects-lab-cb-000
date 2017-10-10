@@ -22,13 +22,7 @@ class Artist
       self.create(name)
     else
       self.all.detect do |artist|
-        binding.pry
-        if artist.name == name
-          true
-        else
-          self.create(name)
-          true
-        end
+        artist.name == name ? true : self.create(name)
       end
     end
     binding.pry
