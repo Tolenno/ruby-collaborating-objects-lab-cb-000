@@ -23,7 +23,6 @@ class Artist
     else
       return_artist = self.all.detect {|artist| artist.name == name}
       return_artist.empty? ? self.create(name) : return_artist
-      end
     end
   end
 
