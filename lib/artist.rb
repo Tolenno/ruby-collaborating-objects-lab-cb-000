@@ -25,7 +25,6 @@ class Artist
         artist.name == name ? true : self.create(name)
       end
     end
-    binding.pry
   end
 
   def self.create(name)
