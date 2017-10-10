@@ -28,7 +28,7 @@ class Artist
   end
 
   def self.create(name)
-    test = self.new(name).tap(&:save)
+    self.new(name).tap(&:save)
     binding.pry
   end
 
