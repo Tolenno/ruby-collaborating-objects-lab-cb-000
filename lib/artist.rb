@@ -23,7 +23,6 @@ class Artist
     else
       self.all.detect do |artist|
         artist.name == name ? true : self.create(name)
-        
       end
     end
   end
