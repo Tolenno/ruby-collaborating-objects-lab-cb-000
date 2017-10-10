@@ -22,7 +22,7 @@ class Artist
       self.create(name)
     else
       self.all.detect do |artist|
-        artist.name == name ? true : self.create(name)
+        artist.name == name
       end
     end
   end
